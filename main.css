@@ -474,6 +474,7 @@ body.login_form {
 }
 
 .ab_htm,
+.ab_py,
 .ab_cs {
        max-width: 1100px;
     width: 100%;
@@ -484,11 +485,135 @@ body.login_form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-footer {
-    background-color: #f0f0f0;
-    padding: 20px 0;
-    text-align: center;
-}
+
 
             //* *//
 
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    position: relative; /* Add this */
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* New CSS for dropdown */
+.footer-navigation-list {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.navigation-section:hover .footer-navigation-list {
+    display: block;
+}
+
+.navigation-section {
+    position: relative;
+}
+.footer-navigation-list {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.navigation-section:hover .footer-navigation-list {
+    display: block;
+}
+
+.navigation-section {
+    position: relative;
+    text-align: center;
+}
