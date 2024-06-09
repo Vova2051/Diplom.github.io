@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="main.css" rel="stylesheet">
+    <link rel="icon" href="./img/logo.jpg" sizes="32x32">
+    <title>Вхід</title>
+</head>
+<body class="login_form">
+    <div class="login-form"> 
+        <h2>Вхід</h2>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Користувач" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Увійти</button>
+        </form>
+        <a href="#" id="forgotPasswordLink">Забули пароль?</a>
+    </div>
+
+    <div id="forgotPasswordPopup" class="popup">
+        <h2>Відновлення пароля</h2>
+        <form id="forgotPasswordForm">
+            <input type="email" id="email" name="email" placeholder="Введіть ваш email" required>
+            <button type="submit">Відновити</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('forgotPasswordLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('forgotPasswordPopup').classList.add('show');
+        });
+
+        document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Інструкції з відновлення пароля надіслані на вашу електронну пошту.');
+            document.getElementById('forgotPasswordPopup').classList.remove('show');
+        });
+    </script>
+</body>
+</html>

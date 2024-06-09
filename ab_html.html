@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic" rel="stylesheet">
+    <link rel="icon" href="./img/logo.jpg" sizes="32x32">
+    <title>JDCourses</title>
+</head>
+<body class="index-body">
+    <header class="main-header">
+        <div class="main-header-wrapper">
+            <div class="container">
+                <nav class="header-navigation">
+                    <ul class="header-navigation-list">
+                         <a href="index.html"><img src="./img/logo.jpg" alt="JDCourses Logo" width="50" height="auto"></a>
+                         <li class="header-navigation-item">
+                            <a href="index.html" class="header-navigation-link">Головна</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="news.html" class="header-navigation-link">Новини</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="course.html" class="header-navigation-link">Курси</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="about.html" class="header-navigation-link">Про нас</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="help.html" class="header-navigation-link">Служба підтримки</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="user-navigation-list">
+                    <li class="user-navigation-item login-block">
+                        <a href="login-form.html" class="user-login-link popup-link">Увійти</a>
+                    </li>
+                    <li class="user-navigation-item">
+                        <a href="create-form.html" class="user-create-link popup-link">Зареєструватися</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!-- тут -->
+<div class="container_course">
+            <h2>Основи HTML</h2>
+        <p>У принципі про основи HTML багато не скажеш.</p>
+        <p>HTML це розмітка( або можна назвати мова), за допомогою якої Ваш браузер відображає ВЕБ сторінку.</p>
+        <p>HTML документ це звичайний текстовий файл з розширенням .html, який відкритий за допомогою браузера та знаходиться на хостингу або вашому комп’ютері. Для того щоб переглянути код HTML сторінки потрібно навести мишку на будь-який елемент на сторінці, натиснути праву кнопку мишки та вибрати пункт -> Переглянути джерело сторінки.</p>
+        <p>HTML дозволяє створювати ВЕБ сторінки з різним контентом; розділяти контент на абзаци, заголовки, зображення, кнопки; виводити на екран форми для заповнення та подальшої обробки даних.</p>
+        <p>Сам HTML документ складається з тегів, якими можна виділити той чи інший елемент.</p>
+        <p>Наприклад для виведення на екран абзацу використовують тег:</p>
+        <p>
+            <div class="ab_htm">
+                <xmp><p>Абзац з текстом</p></xmp>
+            </div>
+        </p>
+        <p>Для виведення заголовків використовують декілька тегів, а саме:</p>
+        <div class="ab_htm">
+
+        <p>
+        <xmp>
+        <h1>Заголовок 1</h1>
+        <h2>Заголовок 2</h2>
+        ........................
+        <h6>Заголовок 6</h6>
+    </xmp>
+        </p>
+    </div>
+        <p>Якщо детальніше розглянути цей тег то можна побачити що тег відкривається елементом <xmp><></xmp> а закривається <xmp></></xmp></p>
+        <img src="./img/html_teg.png">
+        <h1>ОСНОВИ HTML ЕЛЕМЕНТІВ</h1>
+        <p>Отже HTML елемент можна поділити на наступні частини:</p>
+        <ul>
+            <li>Відкриваючий тег: вказує на початок HTML елемента та на його назву</li>
+            <li>Закриваючий тег: вказує на кінець відкритого раніше елементу</li>
+            <li>Вміст елементу: у даному випадку просто текст</li>
+        </ul>
+        <p>Основи HTML повинен знати кожен хто бере участь в наповненні чи створенні сайту. Важливою частиною HTML елемента також є атрибути. Вони використовуються для пошуку та ідентифікації певного елемента чи групи елементів на сторінці, їхньої стилізації за допомогою CSS та зміни у реальному часі за допомогою JS.</p>
+        <h1>ЯК ЦЕ ПРАЦЮЄ?</h1>
+        <img src="./img/html_teg2.png" width="1287" height="156">
+<p><em>class="editor-note my-class my-class-1"</em></p>
+<p>Як бачимо можна вказати декілька класів для одного елемента, розділивши їх пробілом.</p>
+        <h1>ВКЛАДЕНІ ЕЛЕМЕНТИ</h1>
+        <p>При створенні основи HTML сторінки потрібно дотримуватись певних правил, щоб не поламати Вашу сторінку.</p>
+            <ol>
+                <li><p>Не можна перехрещувати теги.</p>
+    <div class="ab_htm">
+        <xmp>
+        <p>Абзац<h2></p>Заголовок</h2>
+        <p>Абзац</p><h2>Заголовок</h2>
+        <h2>Заголовок</h2><p>Абзац</p>
+        </xmp>
+    </div>
+            </li>
+            <li><p>Всі відкриті теги повинні бути закритими</p>
+     <div class="ab_htm">
+        <xmp>
+        <h2>Заголовок</h2><p>Абзац</p>
+        <h2>Заголовок</h2><p>Абзац</p>
+        </xmp>
+     </div>           
+            </li>
+            <li><p>Потрібно пам’ятати про порожні елементи, які не потребують закриваючого тегу:</p>
+    <div class="ab_htm">
+    <xmp>
+        <img src="logo.jpeg" alt="Основи HTML">
+    </xmp>
+    </div>
+            </li>
+        </ol>
+        <p>Цей елемент є пустий і виводить на екран зображення, його не потрібно закривати, і він не має жодного вмісту.</p>
+        <p>Знати основи HTML на даний час є надзвичайно важливо, адже це основа всього ВЕБ програмування.</p>
+        <p>Не все так складно, як здається!!!. Якщо Ви програміст то HTML зможете опанувати за декілька днів, якщо ж новачок то мабуть через 2 тижні Ви зможете написати перший свій сайт на чистому HTML. Для створення повноцінного сайту потрібно також освоїти <a href="ab_css.html">Основи CSS</a></p>
+
+</div>
+<!-- тут -->
+
+<footer>
+    
+</footer>
+</body>
+</html>

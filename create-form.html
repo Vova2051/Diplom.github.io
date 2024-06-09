@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+ <link href="main.css" rel="stylesheet" >
+<link rel="icon" href="./img/logo.jpg" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+<div class="reg_form">
+</head>
+<body>
+    <div class="registration-form" align="center">
+        <h2><font color="black">Реєстрація</font></h2>
+        <form id="registrationForm">
+            <input type="text" id="username" name="username" placeholder="Ім'я користувача" required>
+            <input type="email" id="email" name="email" placeholder="Електронна пошта" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </div>
+</div>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

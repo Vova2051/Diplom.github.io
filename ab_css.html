@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic" rel="stylesheet">
+    <link rel="icon" href="./img/logo.jpg" sizes="32x32">
+    <title>JDCourses</title>
+</head>
+<body class="index-body">
+    <header class="main-header">
+        <div class="main-header-wrapper">
+            <div class="container">
+                <nav class="header-navigation">
+                    <ul class="header-navigation-list">
+                         <a href="index.html"><img src="./img/logo.jpg" alt="JDCourses Logo" width="50" height="auto"></a>
+                         <li class="header-navigation-item">
+                            <a href="index.html" class="header-navigation-link">Головна</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="news.html" class="header-navigation-link">Новини</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="course.html" class="header-navigation-link">Курси</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="about.html" class="header-navigation-link">Про нас</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a href="help.html" class="header-navigation-link">Служба підтримки</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="user-navigation-list">
+                    <li class="user-navigation-item login-block">
+                        <a href="login-form.html" class="user-login-link popup-link">Увійти</a>
+                    </li>
+                    <li class="user-navigation-item">
+                        <a href="create-form.html" class="user-create-link popup-link">Зареєструватися</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!-- тут -->
+<div class="container_course">
+            <h1>ОСНОВИ CSS</h1>
+            <p>Для коректного редагування та форматування вмісту на HTML сторінці був створений CSS. Він також забезпечує коректне відображення стилів на усіх браузерах. Точніше кажучи CSS – це мова стилів яка відображає HTML сторінки. За допомогою CSS можна керувати шрифтами, кольорами, фонами, відступами, шириною та висотою.</p>
+            <p>Структуру CSS також називають «набором правил». До них входить такі елементи:</p>
+            <ol>
+                <li>Селектор – це назва елементу на початку таблиці. Селектор підкреслений червоною лінією.<br> <img src="./img/css1.png"><br>
+                    <img src="./img/css2.png"></li>
+                <li>Властивість – це те чим ви будете змінювати чи стилізувати елемент на веб-сторінці. Вона підкреслена зеленою лінією.<br>
+                <img src="./img/css3.png">
+                </li>
+                <li>Значення властивості – це варіанти відображення даної властивості. Вони підкреслені синьою лінією. В даному випадку це розмір шрифту та жирність.<br>
+                <img src="./img/css4.png">
+                </li>
+            </ol>
+            <h5>Селектори поділяються на кілька класів:</h5>
+            <ol>
+                <li>Селектор елементу – прив’язує стиль до всіх елементів на сторінці. Наприклад до елементів <р> чи <ℏ5> і багато інших.</li>
+                <li>Селектор по класу – прив’язує стиль до елементів які мають заданий клас. У файлі стилів прорисується «.class1{}».<br>
+                    <img src="./img/css5.png">
+                </li>
+                <li>Селектор по id – прив’язує стиль до елементів які мають вказаний id. У файлі стилів прописується за допомогою «#», та у файлі html прорисується id=”nav”.<br>
+                    <img src="./img/css6.png"><br>
+                    <img src="./img/css7.png">
+                </li>
+            </ol>
+            <p>Також можуть бути селектори при наведені курсору на елемент. Тобто, якщо навести курсор на певний елемент змінюється якась його властивість чи стиль. Для цього щоб це реалізувати потрібно до селектора додати «:hover»</p>
+            <p>Одну таблицю властивостей можна задати кільком елементам, дописуючи їх через кому.<br>
+                <img src="./img/css8.png">
+            </p>
+            <h2>ПІДКЛЮЧЕННЯ СТИЛІВ ТА ФАЙЛІВ СТИЛІВ.</h2>
+            <p>Найпростішим способом є прописування стилів в самому елементі за допомогою style.<br>
+                <img src="./img/css9.png">
+            </p>
+            <p>Наступним є підключення у файлі HTML між тегами , цього рядка. 
+               <div class="ab_cs"> <xmp> <head>  </head></xmp></p></div>
+              <div class="ab_cs">  <xmp><link rel="stylesheet" type="text/css" href=""></xmp>
+              </div>
+              <p>У WordPress файл style.css та усі інші завантажені стилі підключаються у файлі function.php вказуючи шлях до файлу.<br>
+                <img src="./img/css10.png">
+              </p>
+              <h1>СПОСОБИ ВИКОРИСТАННЯ, <font color="red">ОСНОВИ CSS</font> ДЛЯ ЕКРАНІВ РІЗНИХ РОЗМІРІВ.</h1>
+              <p>Одним із рішень, адаптивно змінювати значення властивостей в правилах CSS, є використання функції calc(). Вона дозволяє робити прості матиматичні розрахунки в CSS.</p>
+              <p>Розглянемо приклад цієї функції. Нам потрібно змінити розмір шрифту для різних розмірів екрану, 400 пікселів – телефон і 1200 пікселів – ноутбук чи планшет.<br></p>
+              <img src="./img/css11.png">
+              <p>18px – шрифт для екрану розміри якого є менші на 400px, 24px для екрану розміри якого є більші ніж 1200px. 100vw – це значення відповідає ширині екрану 100% (width : 100%). Якщо змінюється ширина екрану, розміри шрифту будуть мінятися. Використовуючи цю функцію шрифт буде мінятися динамічно відповідно до екрану і будуть ставати більшими або меншими.</p>
+              <p>Якщо потрібно використати фіксовані значення тоді можна використати медіа-запити.<br></p>
+              <img src="./img/css12.png">
+              <p>Тоді на екрані до 600px, шрифт буде 18px і не буде змінюватися та на екрані 1200px і більше буде 24px.</p>   
+        </div>
+<!-- тут --> 
+
+<footer>
+    
+</footer>
+</body>
+</html>
