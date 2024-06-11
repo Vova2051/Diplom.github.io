@@ -33,11 +33,17 @@
                     </ul>
                 </nav>
                 <ul class="user-navigation-list">
-                    <li class="user-navigation-item login-block">
-                        <a href="login-form.html" class="user-login-link popup-link">Увійти</a>
+                    <li class="header-navigation-item">
+                        <div id="user-info" style="display: none;">
+                            <span id="username-display"></span> | 
+                            <a href="#" id="logout-link" class="user-singout-link popup-link">Вийти</a>
+                        </div>
                     </li>
-                    <li class="user-navigation-item">
-                        <a href="create-form.html" class="user-create-link popup-link">Зареєструватися</a>
+                    <li class="header-navigation-item">
+                        <a href="login-form.html" id="login-link" class="user-login-link popup-link">Увійти</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="create-form.html" id="signup-link" class="user-create-link popup-link">Зареєструватися</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +67,8 @@
                         <li><a href="news.html">Новини</a></li>
                         <li><a href="course.html">Курси</a></li>
                         <li><a href="about.html">Про нас</a></li>
-                        <li><a href="help.html">Служба підтримки</a></li>
+                        <li><a href="help.html">Служба підтримки</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer-section contact-section">

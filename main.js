@@ -10,3 +10,5 @@ document.addEventListener('DOMContentLoaded', () => {
         footerNavigationList.classList.add('hidden');
     });
 });
+
+

@@ -6,9 +6,9 @@
     <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic" rel="stylesheet">
     <link rel="icon" href="./img/logo.jpg" sizes="32x32">
-    <title>JDCourses</title>
+    <title>Головна</title>
 </head>
-<body class="index-body">
+<body>
     <header class="main-header">
         <div class="main-header-wrapper">
             <div class="container">
@@ -33,11 +33,17 @@
                     </ul>
                 </nav>
                 <ul class="user-navigation-list">
-                    <li class="user-navigation-item login-block">
-                        <a href="login-form.html" class="user-login-link popup-link">Увійти</a>
+                    <li class="header-navigation-item">
+                        <div id="user-info" style="display: none;">
+                            <span id="username-display"></span> | 
+                            <a href="#" id="logout-link" class="user-singout-link popup-link">Вийти</a>
+                        </div>
                     </li>
-                    <li class="user-navigation-item">
-                        <a href="create-form.html" class="user-create-link popup-link">Зареєструватися</a>
+                    <li class="header-navigation-item">
+                        <a href="login-form.html" id="login-link" class="user-login-link popup-link">Увійти</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="create-form.html" id="signup-link" class="user-create-link popup-link">Зареєструватися</a>
                     </li>
                 </ul>
             </div>
@@ -45,7 +51,7 @@
     </header>
     <main>
         <div class="container_course">
-            <h2> <img src="./img/logo.jpg" alt="JDCourses Logo" width="25" height="auto">Вітаємо на JDCourses</h2>
+            <h2><img src="./img/logo.jpg" alt="JDCourses Logo" width="25" height="auto">Вітаємо на JDCourses</h2>
             <p align="center">На нашому сайті ви знайдете курси з різних мов програмування. Ось короткий опис мов, які ви можете вивчити на нашій сторінці курсів:</p>
             <div class="languages-container">
                 <div class="language-item">
@@ -66,14 +72,54 @@
                 </div>
                 <div class="language-item">
                     <h3>React</h3>
-                    <p>React - бібліотека JavaScript, яка використовується для створення інтерфейсів користувача. Вона дозволяє розробляти компонентний підхід до створення складних веб-додатків з високою продуктивністю та повторним використанням компонентів.</p>
+                    <p>React - бібліотека JavaScript для побудови користувацьких інтерфейсів. Вона дозволяє створювати багатокомпонентні додатки з високою продуктивністю, використовуючи декларативний підхід та компонентну архітектуру.</p>
                 </div>
                 <div class="language-item">
-                    <h3>Java</h3>
-                    <p>Java - об'єктно-орієнтована мова програмування, яка широко використовується для розробки корпоративних додатків, мобільних додатків для Android, веб-додатків та серверних рішень.</p>
+                    <h3>Node.js</h3>
+                    <p>Node.js - середовище виконання для JavaScript, яке дозволяє створювати серверні додатки. Використовуючи Node.js, можна розробляти швидкі та масштабовані бекенд-системи, зокрема API та веб-сервери.</p>
+                </div>
+                <div class="language-item">
+                    <h3>Веб-розробка</h3>
+                    <p>Курс з веб-розробки охоплює всі аспекти створення сучасних веб-сайтів, включаючи розмітку HTML, стилізацію CSS, програмування на JavaScript та використання серверних технологій.</p>
+                </div>
+                <div class="language-item">
+                    <h3>Розробка мобільних додатків</h3>
+                    <p>Курс з розробки мобільних додатків навчить вас створювати додатки для Android та iOS. Використовуючи сучасні технології, ви зможете розробляти ефективні та зручні мобільні додатки.</p>
                 </div>
             </div>
-        </div>
+            <div class="ab_htm">
+    <h2>Чому варто вивчати IT?</h2>
+    <ul>
+        <li>Високі зарплати та попит на ринку праці.</li>
+        <li>Можливість працювати віддалено з будь-якої точки світу.</li>
+        <li>Постійний розвиток та вдосконалення навичок.</li>
+        <li>Здатність створювати власні проекти та стартапи.</li>
+    </ul>
+    <h2>Зарплати IT-спеціалістів</h2>
+    <p>Зарплати в IT-сфері можуть значно варіюватися в залежності від спеціалізації, досвіду та місця роботи. Наприклад:</p>
+    <ul>
+        <li>Junior Developer: від $800 до $1500 на місяць.</li>
+        <li>Middle Developer: від $1500 до $3000 на місяць.</li>
+        <li>Senior Developer: від $3000 до $5000 і вище на місяць.</li>
+        <li>DevOps Engineer: від $2500 до $4500 на місяць.</li>
+        <li>Data Scientist: від $3000 до $6000 на місяць.</li>
+    </ul>
+    <h2>Найбільш популярні мови програмування</h2>
+    <p>Серед найпопулярніших мов програмування варто виділити:</p>
+    <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>PHP</li>
+        <li>C++</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
+        <li>Ruby</li>
+    </ul>
+</div>
+
+
     </main>
     <footer>
         <div class="footer-container">
@@ -95,21 +141,15 @@
                 <div class="footer-section contact-section">
                     <h4>Контакти</h4>
                     <p>Email: info@jdcourses.com</p>
-                    <p>Телефон: +38 123 456 7890</p>
-                </div>
-                <div class="footer-section social-section">
-                    <h4>Ми в соціальних мережах</h4>
-                    <div class="social-icons">
-                        <a href="#"><img src="./img/facebook-icon.png" alt="Facebook"></a>
-                        <a href="#"><img src="./img/twitter-icon.png" alt="Twitter"></a>
-                        <a href="#"><img src="./img/instagram-icon.png" alt="Instagram"></a>
-                    </div>
+                    <p>Телефон: +38 (123) 456-7890</p>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 JDCourses. Усі права захищені.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JDCourses. Всі права захищено.</p>
+            </div>
         </div>
     </footer>
+    <script src="main.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
