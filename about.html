@@ -7,6 +7,20 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic" rel="stylesheet">
     <link rel="icon" href="./img/logo.jpg" sizes="32x32">
     <title>JDCourses</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJpoR7NqcyHNtS_PFRipNhZ5aeGj4dNQo&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var location = {lat: 50.4501, lng: 30.5234};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
 </head>
 <body class="index-body">
     <header class="main-header">
@@ -14,8 +28,8 @@
             <div class="container">
                 <nav class="header-navigation">
                     <ul class="header-navigation-list">
-                         <a href="index.html"><img src="./img/logo.jpg" alt="JDCourses Logo" width="50" height="auto"></a>
-                         <li class="header-navigation-item">
+                        <a href="index.html"><img src="./img/logo.jpg" alt="JDCourses Logo" width="50" height="auto"></a>
+                        <li class="header-navigation-item">
                             <a href="index.html" class="header-navigation-link">Головна</a>
                         </li>
                         <li class="header-navigation-item">
@@ -49,11 +63,30 @@
             </div>
         </div>
     </header>
-<!-- тут -->
 
-<!-- тут -->
+     <section class="about-section">
+        <div class="container_course">
+            <h2>Про JDCourses</h2>
+            <p>JDCourses - це платформа для онлайн-навчання, що пропонує курси з програмування та IT. Ми надаємо високоякісні навчальні матеріали, інтерактивні завдання та підтримку викладачів, щоб допомогти вам розвивати свої навички та досягати професійних цілей.</p>
+            <p>Наші курси охоплюють різноманітні технології, від основ програмування до передових методів розробки програмного забезпечення. Ми працюємо з провідними спеціалістами галузі, щоб забезпечити актуальність та високий рівень навчальних програм.</p>
+            <p>Наша місія - зробити якісну освіту доступною для кожного, хто прагне вчитися. Ми віримо, що знання - це сила, яка може змінити життя на краще. Тому ми створюємо умови для зручного та ефективного навчання, незалежно від вашого місця знаходження.</p>
+            <p>Наші студенти отримують доступ до:</p>
+            <ul>
+                <li>Актуальних курсів з різних мов програмування, включаючи Python, Java, JavaScript та інші</li>
+                <li>Практичних завдань та проектів, що допомагають застосовувати знання на практиці</li>
+                <li>Підтримки від досвідчених викладачів та спільноти однодумців</li>
+                <li>Сертифікатів, які підтверджують ваші досягнення та допоможуть у працевлаштуванні</li>
+            </ul>
+            <p>Приєднуйтесь до JDCourses та почніть свою подорож у світ IT вже сьогодні!</p>
+        </div>
+    </section>
 
-<footer>
+    <div class="container_course">
+        <h2>Наше розташування</h2>
+        <div id="map"></div>
+    </div>
+
+    <footer>
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section about-section">
@@ -68,7 +101,7 @@
                         <li><a href="course.html">Курси</a></li>
                         <li><a href="about.html">Про нас</a></li>
                         <li><a href="help.html">Служба підтримки</a></li>
-                        <li class="header-navigation-item"></li>
+                    </ul>
                 </div>
                 <div class="footer-section contact-section">
                     <h4>Контакти</h4>
@@ -86,7 +119,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 JDCourses. Усі права захищені.</p>
+            <p>&copy; 2024 JDCourses. Усі права захищені.</p>
         </div>
     </footer>
 </body>
